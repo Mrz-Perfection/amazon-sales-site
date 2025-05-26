@@ -1,255 +1,94 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Amazon Marketing Tools</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --primary: #ff69b4;
-      --background: #fff6fb;
-      --text: #333;
-      --accent: #ff1493;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: var(--background);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: var(--primary);
-      color: white;
-      padding: 3rem 2rem;
-      text-align: center;
-      border-bottom: 5px solid var(--accent);
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 3rem;
-    }
-
-    header p {
-      font-size: 1.3rem;
-      margin-top: 0.5rem;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      background: var(--accent);
-      padding: 1rem;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #ffd1e8;
-    }
-
-    section {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h2 {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-      color: var(--accent);
-    }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-    }
-
-    .product {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      transition: transform 0.3s;
-    }
-
-    .product:hover {
-      transform: translateY(-5px);
-    }
-
-    .product h3 {
-      margin-top: 0;
-      color: var(--primary);
-    }
-
-    .btn {
-      display: inline-block;
-      background: var(--accent);
-      color: white;
-      padding: 0.6rem 1.2rem;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 600;
-      margin-top: 1rem;
-      transition: background 0.3s;
-    }
-
-    .btn:hover {
-      background: #e21380;
-    }
-
-    .about, .contact {
-      background-color: #ffe6f2;
-      border-radius: 20px;
-      padding: 2rem;
-      margin-top: 2rem;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-
-    label {
-      margin-top: 1rem;
-      font-weight: 600;
-    }
-
-    input, textarea {
-      padding: 0.75rem;
-      border: 2px solid #ffd1e8;
-      border-radius: 10px;
-      font-size: 1rem;
-      margin-top: 0.5rem;
-    }
-
-    button {
-      margin-top: 1.5rem;
-      background: var(--accent);
-      color: white;
-      border: none;
-      padding: 0.8rem 1.5rem;
-      border-radius: 30px;
-      cursor: pointer;
-      font-size: 1rem;
-      transition: background 0.3s;
-    }
-
-    button:hover {
-      background: #e21380;
-    }
-
-    .disclaimer {
-      text-align: center;
-      font-size: 0.9rem;
-      margin-top: 2rem;
-      padding: 1rem;
-      background: #ffe6f2;
-      border-radius: 15px;
-      color: #444;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    footer {
-      text-align: center;
-      background: var(--primary);
-      color: white;
-      padding: 2rem 1rem;
-      margin-top: 3rem;
-      border-top: 5px solid var(--accent);
-    }
-
-    footer a {
-      color: #ffe6f2;
-      text-decoration: none;
-      margin: 0 0.5rem;
-      font-weight: 600;
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      * {
-        transition: none !important;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfection Picks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffb6c1;
+            padding: 1em;
+            text-align: center;
+            color: white;
+        }
+        .container {
+            padding: 2em;
+        }
+        h1, h2 {
+            color: #cc3366;
+        }
+        .product {
+            border: 2px solid #f9c;
+            border-radius: 12px;
+            padding: 1em;
+            margin-bottom: 1.5em;
+            background-color: #fff0f5;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.6em 1em;
+            background-color: #ff69b4;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+        .disclaimer {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 3em;
+            text-align: center;
+        }
+        footer {
+            background-color: #ffb6c1;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            margin-top: 2em;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Perfection Picks</h1>
+        <p>Curated digital tools and helpful finds — available on Amazon</p>
+    </header>
 
-<header>
-  <h1>Digital Tools for Amazon Sellers</h1>
-  <p>Expert-curated resources and product picks to grow your Amazon business.</p>
-</header>
+    <div class="container">
+        <h2>Digital Downloads</h2>
+        <div class="product">
+            <h3>Social Media Planner (PDF)</h3>
+            <p>Stay on top of your content schedule with this clean, easy-to-use digital planner.</p>
+            <a href="#" class="btn">Download Now</a>
+        </div>
 
-<nav>
-  <a href="#products">Products</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
-</nav>
+        <h2>Useful Amazon Finds</h2>
+        <div class="product">
+            <h3>Tripod Ring Light</h3>
+            <p>Enhance your video or product photography lighting with this adjustable ring light.</p>
+            <a href="https://www.amazon.com/dp/B08XYZ1234?tag=yourtag-20" class="btn" target="_blank">View on Amazon</a>
+        </div>
 
-<section id="products">
-  <h2>Top Amazon Picks</h2>
-  <div class="products">
-    <div class="product">
-      <h3>Keyword Research Tool</h3>
-      <p>Our favorite tool for Amazon keyword research. Boost visibility fast!</p>
-      <a class="btn" href="https://www.amazon.com/dp/EXAMPLE1?tag=yourtag-20" target="_blank">Buy on Amazon</a>
+        <div class="product">
+            <h3>Wireless Keyboard</h3>
+            <p>Comfortable typing with a slim wireless keyboard, great for workspace setup.</p>
+            <a href="https://www.amazon.com/dp/B07ABC5678?tag=yourtag-20" class="btn" target="_blank">View on Amazon</a>
+        </div>
+
+        <p class="disclaimer">
+            As an Amazon Associate, I earn from qualifying purchases. All product links are provided for convenience only and do not imply any endorsement by Amazon.
+        </p>
     </div>
-    <div class="product">
-      <h3>Best USB Label Printer</h3>
-      <p>Highly rated printer perfect for FBA sellers. Easy setup and great reviews.</p>
-      <a class="btn" href="https://www.amazon.com/dp/EXAMPLE2?tag=yourtag-20" target="_blank">Buy on Amazon</a>
-    </div>
-    <div class="product">
-      <h3>Shipping Scale</h3>
-      <p>Reliable and affordable. Great for calculating FBA and FBM shipping costs.</p>
-      <a class="btn" href="https://www.amazon.com/dp/EXAMPLE3?tag=yourtag-20" target="_blank">Buy on Amazon</a>
-    </div>
-  </div>
 
-  <div class="disclaimer">
-    <p><strong>Disclosure:</strong> As an Amazon Associate, I earn from qualifying purchases. This site contains affiliate links that help support the content at no extra cost to you.</p>
-  </div>
-</section>
-
-<section id="about" class="about">
-  <h2>Why This Site?</h2>
-  <p>This site features hand-picked tools and digital resources to help Amazon sellers succeed — from PPC tracking templates to top-rated accessories. All links are affiliate-supported to help keep this content free and updated.</p>
-</section>
-
-<section id="contact" class="contact">
-  <h2>Contact</h2>
-  <form>
-    <label for="name">Your Name</label>
-    <input type="text" id="name" name="name" required />
-
-    <label for="email">Your Email</label>
-    <input type="email" id="email" name="email" required />
-
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
-
-    <button type="submit">Send Message</button>
-  </form>
-</section>
-
-<footer>
-  <p>&copy; 2025 Your Store Name. All rights reserved.</p>
-  <p><a href="#">Instagram</a> | <a href="#">LinkedIn</a> | <a href="#">Privacy Policy</a></p>
-</footer>
-
+    <footer>
+        <p>© 2025 Perfection Picks. All rights reserved.</p>
+    </footer>
 </body>
 </html>
