@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amazon Marketing Tools</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #ff69b4;
+      --background: #fff6fb;
+      --text: #333;
+      --accent: #ff1493;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+      border-bottom: 5px solid var(--accent);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      margin-top: 0.5rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: var(--accent);
+      padding: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd1e8;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: var(--accent);
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .product {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .product h3 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 1rem;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #e21380;
+    }
+
+    .about, .contact {
+      background-color: #ffe6f2;
+      border-radius: 20px;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+
+    input, textarea {
+      padding: 0.75rem;
+      border: 2px solid #ffd1e8;
+      border-radius: 10px;
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    button {
+      margin-top: 1.5rem;
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #e21380;
+    }
+
+    .disclaimer {
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+      padding: 1rem;
+      background: #ffe6f2;
+      border-radius: 15px;
+      color: #444;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    footer {
+      text-align: center;
+      background: var(--primary);
+      color: white;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+      border-top: 5px solid var(--accent);
+    }
+
+    footer a {
+      color: #ffe6f2;
+      text-decoration: none;
+      margin: 0 0.5rem;
+      font-weight: 600;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Digital Tools for Amazon Sellers</h1>
+  <p>Expert-curated resources and product picks to grow your Amazon business.</p>
+</header>
+
+<nav>
+  <a href="#products">Products</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="products">
+  <h2>Top Amazon Picks</h2>
+  <div class="products">
+    <div class="product">
+      <h3>Keyword Research Tool</h3>
+      <p>Our favorite tool for Amazon keyword research. Boost visibility fast!</p>
+      <a class="btn" href="https://www.amazon.com/dp/EXAMPLE1?tag=yourtag-20" target="_blank">Buy on Amazon</a>
+    </div>
+    <div class="product">
+      <h3>Best USB Label Printer</h3>
+      <p>Highly rated printer perfect for FBA sellers. Easy setup and great reviews.</p>
+      <a class="btn" href="https://www.amazon.com/dp/EXAMPLE2?tag=yourtag-20" target="_blank">Buy on Amazon</a>
+    </div>
+    <div class="product">
+      <h3>Shipping Scale</h3>
+      <p>Reliable and affordable. Great for calculating FBA and FBM shipping costs.</p>
+      <a class="btn" href="https://www.amazon.com/dp/EXAMPLE3?tag=yourtag-20" target="_blank">Buy on Amazon</a>
+    </div>
+  </div>
+
+  <div class="disclaimer">
+    <p><strong>Disclosure:</strong> As an Amazon Associate, I earn from qualifying purchases. This site contains affiliate links that help support the content at no extra cost to you.</p>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <h2>Why This Site?</h2>
+  <p>This site features hand-picked tools and digital resources to help Amazon sellers succeed — from PPC tracking templates to top-rated accessories. All links are affiliate-supported to help keep this content free and updated.</p>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <form>
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Your Store Name. All rights reserved.</p>
+  <p><a href="#">Instagram</a> | <a href="#">LinkedIn</a> | <a href="#">Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>
